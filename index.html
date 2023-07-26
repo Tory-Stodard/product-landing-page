@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handjet&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/3c89445e0c.js"
       crossorigin="anonymous"
@@ -12,11 +18,15 @@
   </head>
   <body>
     <header id="header">
-      <img
-        src="https://placehold.jp/150x50.png"
-        alt="logo image"
-        id="header-image"
-      />
+      <div class="header-logo">
+        <img
+          src="./images/keyboard-regular.svg"
+          alt="logo image"
+          id="header-image"
+        />
+        <p>Awesome Keyboards</p>
+      </div>
+
       <nav id="nav-bar">
         <a href="" class="nav-link">link one</a>
         <a href="" class="nav-link">link two</a>
@@ -37,56 +47,82 @@
       </section>
       <section id="features">
         <div class="selling-point">
-          <i class="fa-solid fa-check"></i>
-          <p>Selling point one</p>
+          <div class="sp-image">
+            <i class="fa-solid fa-check fa-xl"></i>
+          </div>
+          <div class="sp-text">
+            <h2>Selling Point One</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
         </div>
         <div class="selling-point">
-          <i class="fa-solid fa-check"></i>
-          <p>Selling point two</p>
+          <div class="sp-image">
+            <i class="fa-solid fa-check fa-xl"></i>
+          </div>
+          <div class="sp-text">
+            <h2>Selling Point Two</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              repellat libero hic ab sed esse repudiandae fuga reiciendis eaque
+              officia!
+            </p>
+          </div>
         </div>
         <div class="selling-point">
-          <i class="fa-solid fa-check"></i>
-          <p>Selling point three</p>
+          <div class="sp-image">
+            <i class="fa-solid fa-check fa-xl"></i>
+          </div>
+          <div class="sp-text">
+            <h2>Selling Point Three</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              repellat libero hic ab sed esse repudiandae fuga reiciendis eaque
+              officia!
+            </p>
+          </div>
         </div>
       </section>
       <br />
       <iframe
         src="https://www.youtube.com/embed/4RYD_rbO_fw"
         frameborder="0"
-        width="400"
-        height="250"
         id="video"
       ></iframe>
-      <div class="card">
-        <header>Plan One</header>
-        <p>$100</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-          repellat libero hic ab sed esse repudiandae fuga reiciendis eaque
-          officia! Consequuntur accusamus perspiciatis modi veritatis ipsam
-          ullam hic laudantium pariatur.
-        </p>
-      </div>
-      <div class="card">
-        <header>Plan Two</header>
-        <p>$200</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          quibusdam illo provident voluptatibus cupiditate ipsam inventore sed
-          expedita nostrum, eaque fuga porro voluptas, delectus dignissimos
-          obcaecati aliquid eos accusamus corrupti.
-        </p>
-      </div>
-      <div class="card">
-        <header>Plan Three</header>
-        <p>$300</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ea
-          perspiciatis magni ipsam omnis, laborum nam natus minus hic dicta ipsa
-          deleniti sunt asperiores sit. Accusantium dignissimos voluptatibus
-          amet obcaecati.
-        </p>
-      </div>
+      <section id="cards">
+        <div class="card">
+          <h3>Plan One</h3>
+          <p class="price">$100</p>
+          <ul>
+            <li>Lorem</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div class="card">
+          <h3>Plan Two</h3>
+          <p class="price">$200</p>
+          <ul>
+            <li>Lorem</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+          <button>Select</button>
+        </div>
+        <div class="card">
+          <h3>Plan Three</h3>
+          <p class="price">$300</p>
+          <ul>
+            <li>Lorem</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+          <button>Select</button>
+        </div>
+      </section>
     </main>
     <footer>
       <p>Copyright 2023, Awesome Keyboards</p>
